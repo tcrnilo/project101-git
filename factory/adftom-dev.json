@@ -1,0 +1,9 @@
+{
+	"name": "adftom-dev",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7c21e225-a691-4ba5-b324-5fc7f744e530",
+		"tenantId": "03e86e5a-2bdc-4eea-b3b8-586e244672be"
+	}
+}
