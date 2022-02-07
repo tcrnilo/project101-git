@@ -138,14 +138,7 @@
 			{
 				"name": "Check Input File",
 				"type": "Validation",
-				"dependsOn": [
-					{
-						"activity": "Wait1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
@@ -154,15 +147,6 @@
 					},
 					"timeout": "7.00:00:00",
 					"sleep": 10
-				}
-			},
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 1
 				}
 			}
 		],
