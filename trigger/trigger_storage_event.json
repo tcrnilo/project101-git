@@ -1,0 +1,17 @@
+{
+	"name": "trigger_storage_event",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/9515895d-6708-400e-b6b7-4f8d3cbcd73b/resourceGroups/dev/providers/Microsoft.Storage/storageAccounts/straccdev",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
