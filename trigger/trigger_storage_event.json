@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/input/blobs/",
+			"blobPathBeginsWith": "/input/blobs/addresses",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/9515895d-6708-400e-b6b7-4f8d3cbcd73b/resourceGroups/dev/providers/Microsoft.Storage/storageAccounts/straccdev",
 			"events": [
