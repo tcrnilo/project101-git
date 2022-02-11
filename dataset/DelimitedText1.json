@@ -1,24 +1,22 @@
 {
-	"name": "Output",
+	"name": "DelimitedText1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_Azure_Blob_Storage_dev",
+			"referenceName": "LS_Github",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation",
-				"fileName": "new_file.csv",
-				"container": "output"
+				"type": "HttpServerLocation",
+				"relativeUrl": "/tcrnilo/Repo/blob/master/ListOfFiles.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": false,
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
