@@ -1,16 +1,24 @@
 {
-	"name": "DelimitedText1",
+	"name": "HttpGit",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_Github",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "/tcrnilo/Repo/blob/master/ListOfFiles.csv"
+				"relativeUrl": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
